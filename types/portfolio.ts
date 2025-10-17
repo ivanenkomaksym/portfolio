@@ -10,6 +10,8 @@ export interface BasicInfo {
 export interface SkillCategory {
   category: string;
   skills: Skill[];
+  color?: string;
+  icon?: string;
 }
 
 export interface Skill {

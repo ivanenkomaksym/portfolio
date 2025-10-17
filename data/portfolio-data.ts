@@ -3,117 +3,154 @@ import { PortfolioData } from "@/types/portfolio";
 export const portfolioData: PortfolioData = {
   basicInfo: {
     name: "Maksym Ivanenko",
-    title: "Full Stack Developer",
-    summary: "Passionate software engineer with expertise in building scalable web applications. I love solving complex problems and creating elegant solutions that make a difference.",
+    title: "Software Architect",
+    summary: "Experienced Software Architect with over 12 years in the industry, specializing in Cloud Computing, Microservices, Event-Driven, and Service-Oriented Architectures. Adept at building scalable, cloud-native, AI-powered distributed systems, leveraging deep expertise in the Azure cloud platform and the .NET ecosystem, alongside containerization (Docker, Kubernetes, Helm) and Infrastructure as Code (Terraform). Proficient in optimizing and maintaining automated CI/CD pipelines (Git, Azure DevOps) to ensure smooth development workflows. Proven track record of providing technical leadership and mentorship, guiding teams to deliver innovative solutions that drive efficiency and reduce operational costs. Skilled in collaborating with clients and business stakeholders to inform technical decision-making and successfully execute projects. Passionate about staying at the forefront of emerging technologies, AI advancements and development copilots, to consistently integrate diverse frameworks and craft cohesive, high-performance solutions.",
     photo: "/images/profile.jpg",
     location: "Remote",
-    email: "contact@example.com"
+    email: "ivanenkomak@gmail.com"
   },
   skills: [
     {
-      category: "Frontend",
+      category: "Architectures & Systems",
+      color: "#2563eb",
+      icon: "🏗️",
       skills: [
-        { name: "React", color: "bg-blue-500" },
-        { name: "Next.js", color: "bg-black" },
-        { name: "TypeScript", color: "bg-blue-600" },
-        { name: "Tailwind CSS", color: "bg-cyan-500" },
-        { name: "HTML5", color: "bg-orange-500" },
-        { name: "CSS3", color: "bg-blue-400" }
+        { name: "Microservices", color: "#3b82f6" },
+        { name: "Event-Driven", color: "#1d4ed8" },
+        { name: "Cloud-Native", color: "#60a5fa" },
+        { name: "SOA", color: "#1e40af" },
+        { name: "Serverless", color: "#3730a3" }
       ]
     },
     {
-      category: "Backend",
+      category: "Languages & Frameworks",
+      color: "#dc2626",
+      icon: "💻",
       skills: [
-        { name: "Node.js", color: "bg-green-600" },
-        { name: "Python", color: "bg-yellow-500" },
-        { name: "C#/.NET", color: "bg-purple-600" },
-        { name: "REST API", color: "bg-gray-600" },
-        { name: "GraphQL", color: "bg-pink-500" }
+        { name: "C#", color: "#239120" },
+        { name: ".NET", color: "#512bd4" },
+        { name: "Rust", color: "#ce422b" },
+        { name: "Go", color: "#00add8" },
+        { name: "C++", color: "#00599c" },
+        { name: "JavaScript", color: "#f7df1e" },
+        { name: "Python", color: "#3776ab" }
       ]
     },
     {
-      category: "Database",
+      category: "Cloud & DevOps",
+      color: "#059669",
+      icon: "☁️",
       skills: [
-        { name: "PostgreSQL", color: "bg-blue-700" },
-        { name: "MongoDB", color: "bg-green-500" },
-        { name: "Redis", color: "bg-red-600" },
-        { name: "SQL Server", color: "bg-red-700" }
+        { name: "Azure", color: "#0078d4" },
+        { name: "AWS", color: "#ff9900" },
+        { name: "GCP", color: "#4285f4" },
+        { name: "Terraform", color: "#623ce4" },
+        { name: "Docker", color: "#2496ed" },
+        { name: "Kubernetes", color: "#326ce5" },
+        { name: "Helm", color: "#0f1689" },
+        { name: "ArgoCD", color: "#ef7b4d" },
+        { name: "Aspire", color: "#512bd4" }
       ]
     },
     {
-      category: "DevOps & Tools",
+      category: "Data & Messaging",
+      color: "#7c3aed",
+      icon: "🗄️",
       skills: [
-        { name: "Docker", color: "bg-blue-500" },
-        { name: "Kubernetes", color: "bg-blue-600" },
-        { name: "Git", color: "bg-orange-600" },
-        { name: "CI/CD", color: "bg-green-700" },
-        { name: "AWS", color: "bg-yellow-600" },
-        { name: "Azure", color: "bg-blue-600" }
+        { name: "MongoDB", color: "#47a248" },
+        { name: "Redis", color: "#dc382d" },
+        { name: "MySQL", color: "#4479a1" },
+        { name: "Firestore", color: "#ffca28" },
+        { name: "RabbitMQ", color: "#ff6600" },
+        { name: "OData", color: "#326ce5" },
+        { name: "Swagger", color: "#85ea2d" }
+      ]
+    },
+    {
+      category: "AI & Automation",
+      color: "#db2777",
+      icon: "🤖",
+      skills: [
+        { name: "OpenAI", color: "#412991" },
+        { name: "Azure AI", color: "#0078d4" },
+        { name: "NLP", color: "#ff6b35" },
+        { name: "MCP", color: "#6366f1" },
+        { name: "AI Copilots", color: "#24292e" }
+      ]
+    },
+    {
+      category: "Tools",
+      color: "#ea580c",
+      icon: "🛠️",
+      skills: [
+        { name: "Git", color: "#f05032" },
+        { name: "Azure DevOps", color: "#0078d4" },
+        { name: "OpenTelemetry", color: "#f5a623" },
+        { name: "OAuth 2.0", color: "#3c4043" },
+        { name: "Postman", color: "#ff6c37" },
+        { name: "PowerShell", color: "#012456" }
       ]
     }
   ],
   projects: [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with real-time inventory management, payment processing, and advanced analytics.",
-      technologies: ["Next.js", "Node.js", "PostgreSQL", "Stripe", "Docker"],
-      githubUrl: "https://github.com/username/project1",
-      demoUrl: "https://demo.example.com"
+      title: "eShop on Containers",
+      description: "A production-ready e-commerce platform demonstrating scalable event-driven microservices architecture and AI-enhanced product discovery.",
+      technologies: [".NET", "Event-Driven", "Microservices", "AI Search", "DevOps"],
+      githubUrl: "https://github.com/ivanenkomaksym/dotnet-messagebroker-demo"
     },
     {
-      title: "Task Management System",
-      description: "Collaborative task management application with real-time updates, team chat, and project analytics.",
-      technologies: ["React", "TypeScript", "MongoDB", "Socket.io", "Express"],
-      githubUrl: "https://github.com/username/project2"
+      title: "Rust URL Shortener",
+      description: "High-performance, cloud-ready URL shortening service with distributed coordination, real-time analytics, and multiple storage backends.",
+      technologies: ["Rust", "Redis", "MongoDB", "Firestore"],
+      githubUrl: "https://github.com/ivanenkomaksym/rust-short-url"
     },
     {
-      title: "DevOps Automation Tool",
-      description: "Automation tool for CI/CD pipelines with support for multiple cloud providers and custom deployment strategies.",
-      technologies: ["Python", "Docker", "Kubernetes", "AWS", "Terraform"],
-      githubUrl: "https://github.com/username/project3"
+      title: "RemindMe Bot",
+      description: "AI-powered Telegram bot for intelligent reminders with recurring scheduling, timezone detection, and natural-language date parsing.",
+      technologies: ["Go", "Telegram API", "MongoDB", "GCP", "AWS"],
+      githubUrl: "https://github.com/ivanenkomaksym/remindme_bot"
+    },
+    {
+      title: "Generative Consultant",
+      description: "AI-driven productivity toolkit for workflow automation, content generation, and market research — demonstrating applied use of LLM APIs in real-world scenarios.",
+      technologies: ["OpenAI", "Next.js", "Clerk", "Vercel"],
+      githubUrl: "https://github.com/ivanenkomaksym/genconsultant"
     }
   ],
   education: [
     {
-      institution: "University of Technology",
-      degree: "Master of Science",
-      field: "Computer Science",
-      period: "2018 - 2020",
-      description: "Specialized in Distributed Systems and Machine Learning"
-    },
-    {
-      institution: "University of Technology",
-      degree: "Bachelor of Science",
-      field: "Software Engineering",
-      period: "2014 - 2018",
-      description: "Focus on Web Development and Database Systems"
+      institution: "Ivan Franko National University of Lviv",
+      degree: "Master's degree",
+      field: "Information Technologies",
+      period: "2008 - 2013",
+      description: ""
     }
   ],
   achievements: [
     {
-      title: "AWS Certified Solutions Architect",
+      title: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
-      date: "2023",
-      description: "Professional level certification for architecting and deploying scalable systems on AWS",
-      credentialUrl: "https://aws.amazon.com/certification/"
+      date: "",
+      description: ""
     },
     {
-      title: "Certified Kubernetes Administrator",
-      issuer: "Cloud Native Computing Foundation",
-      date: "2022",
-      description: "Expertise in Kubernetes cluster administration and management"
+      title: "Microsoft Certified: Azure Fundamentals",
+      issuer: "Microsoft",
+      date: "",
+      description: ""
     },
     {
-      title: "Best Innovation Award",
-      issuer: "Tech Conference 2021",
-      date: "2021",
-      description: "Awarded for developing an innovative solution for microservices orchestration"
+      title: "Certified Qt Developer",
+      issuer: "The Qt Company",
+      date: "",
+      description: ""
     }
   ],
   socialLinks: [
     { platform: "GitHub", url: "https://github.com/ivanenkomaksym", icon: "github" },
-    { platform: "LinkedIn", url: "https://linkedin.com/in/username", icon: "linkedin" },
-    { platform: "Twitter", url: "https://twitter.com/username", icon: "twitter" },
-    { platform: "Email", url: "mailto:contact@example.com", icon: "email" }
+    { platform: "LinkedIn", url: "https://www.linkedin.com/in/ivanenkomaksym/", icon: "linkedin" },
+    { platform: "Telegram", url: "https://t.me/m8double", icon: "telegram" },
+    { platform: "Email", url: "mailto:ivanenkomak@gmail.com", icon: "email" }
   ]
 };

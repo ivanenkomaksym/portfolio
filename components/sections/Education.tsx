@@ -15,29 +15,38 @@ export default function Education({ data }: EducationProps) {
           {data.map((edu, idx) => (
             <div
               key={idx}
-              className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                    {edu.degree}
-                  </h3>
-                  <p className="text-lg text-blue-600 dark:text-blue-400">
-                    {edu.field}
-                  </p>
+              <div className="flex items-start gap-6">
+                {/* University Logo */}
+                <div className="flex-shrink-0">
+                  <div className="w-20 h-20 rounded-full overflow-hidden shadow-lg bg-white">
+                    <img 
+                      src="/images/unilogo.jpg" 
+                      alt="Ivan Franko National University of Lviv" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
-                <span className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">
-                  {edu.period}
-                </span>
+
+                {/* Education Content */}
+                <div className="flex-grow">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                    {edu.institution}
+                  </h3>
+                  <p className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                    {edu.degree} in {edu.field}
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-400 text-base">
+                    {edu.period}
+                  </p>
+                  {edu.description && (
+                    <p className="text-gray-700 dark:text-gray-300 mt-3">
+                      {edu.description}
+                    </p>
+                  )}
+                </div>
               </div>
-              <p className="text-gray-800 dark:text-gray-200 font-medium mb-2">
-                {edu.institution}
-              </p>
-              {edu.description && (
-                <p className="text-gray-700 dark:text-gray-300">
-                  {edu.description}
-                </p>
-              )}
             </div>
           ))}
         </div>
