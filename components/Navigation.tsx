@@ -37,7 +37,7 @@ export default function Navigation() {
             className={`text-xl font-bold transition-colors ${
               isScrolled
                 ? "text-gray-900 dark:text-white"
-                : "text-white"
+                : "text-gray-900 dark:text-white"
             }`}
           >
             Portfolio
@@ -52,7 +52,7 @@ export default function Navigation() {
                 className={`transition-colors hover:text-blue-600 dark:hover:text-blue-400 ${
                   isScrolled
                     ? "text-gray-700 dark:text-gray-300"
-                    : "text-white"
+                    : "text-gray-800 dark:text-gray-200"
                 }`}
               >
                 {item.name}
@@ -66,7 +66,7 @@ export default function Navigation() {
             className={`md:hidden p-2 rounded-lg transition-colors ${
               isScrolled
                 ? "text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
-                : "text-white hover:bg-white/10"
+                : "text-gray-800 dark:text-gray-200 hover:bg-gray-200/50 dark:hover:bg-gray-700/50"
             }`}
             aria-label="Toggle menu"
           >
